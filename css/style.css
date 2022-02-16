@@ -1,0 +1,258 @@
+*{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    font-family:arial;
+}
+
+a{text-decoration:none;color:white;}
+
+li{margin-left:20px;}
+
+.navigation-wrapper{
+    background-color:#041b2c;
+}
+
+.navigation-inner-wrapper{
+    height:100px;
+    display:flex;
+    align-items:center;
+    margin:0px auto;
+    max-width:1200px;
+    padding:30px ;
+}
+.logo{
+    height:250px;
+}
+.logo-wrapper{
+    flex:1;
+    display:flex;
+    color:white;
+}
+.logo-wrapper li{font-size:16pt;}
+.menu-wrapper li{float:right}
+
+.fa-bars{
+    color:white;
+}
+.nav-list-item li{float:right;}
+.nav-list-item li a{font-size:15pt}
+
+.landing-section-bg-image{
+    height:80vh;
+    background:url('../images/bgMain.jpg');
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+}
+.landing-section-mask{
+    height:80vh;
+    background-color:rgb(0 0 0 / 90%);
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+}
+#welcome-header{font-size:34pt;text-align:center}
+#sub-header , #sub-sub-header{margin-top:10px}
+
+
+.flex-wrapper-parent{
+    padding-top:20px;
+    text-align:center;
+    padding-bottom:80px;
+}
+.flex-wrapper-parent h1{font-size:36pt;}
+
+.flex-wrapper{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap:20px;
+    row-gap:20px;
+    padding-top:20px;
+    margin:0px auto;
+    padding: 40px;
+    max-width:1200px;
+}
+.flex-wrapper-2{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap:20px;
+    row-gap:20px;
+    padding-top:0px;
+    margin:0px auto;
+    padding: 40px;
+    max-width:1200px;
+    margin-top:-40px;
+}
+.flex-item{
+    background-color:#1674bd;
+    justify-content:center;
+    padding-top:20px;padding-bottom:20px;
+    flex-direction:column;
+    padding:0px 0px 60px;
+    text-align:center;
+}
+.serviceImage{
+    display:flex;
+    width:100%;
+}
+
+.service-bg-img-1{
+    background:url('https://www.winniepalmerhospital.com/-/media/images/winnie-palmer-hospital/services-and-specialties/patient-family-counseling-mobile.jpg');
+    background-repeat: no-repeat;
+    background-color:red;
+    height:200px;
+    background-size:100% 100%;
+}
+
+.service-bg-img-2{
+    background:url('../images/bgMain.jpg');
+    background-repeat: no-repeat;
+    background-color:red;
+    height:200px;
+    background-size:100% 100%;
+}
+.service-bg-img-3{
+    background:url('https://introspectivecounselingllc.com/wp-content/uploads/2021/06/bigstock-Sad-woman-crying-next-to-her-t-45830563-3.jpg');
+    background-repeat: no-repeat;
+    background-color:red;
+    height:200px;
+    background-size:100% 100%;
+}
+.service-bg-img-4{
+    background:url('https://media.istockphoto.com/photos/woman-sitting-on-couch-meeting-with-male-relationship-counsellor-in-picture-id1132295595?k=20&m=1132295595&s=612x612&w=0&h=46ft7f49kS6GnHjt8FKcHMIi_2KZLc1MFQUiezazrAk=');
+    background-repeat: no-repeat;
+    background-color:red;
+    height:200px;
+    background-size:100% 100%;
+}
+.service-bg-img-5{
+    background:url('https://www.bestforteens.com/wp-content/uploads/organizations-that-help-teenage-pregnancy.png');
+    background-repeat: no-repeat;
+    background-color:red;
+    height:200px;
+    background-size:100% 100%;
+}
+
+.service-mask{
+    background-color:rgb(14 6 6 / 69%);
+    height:200px;
+}
+.service-header{
+    margin-top:20px;
+    color:white;
+    font-size:17pt;
+}
+.service-content-wrapper{
+    padding:0px 10px 0px 10px;
+    color:white;
+}
+
+
+.impact-bg-image{
+    background:url('https://www.amansw.com.au/wp-content/uploads/2020/11/6-Mental-health-image.jpg'); 
+    background-size:100% 100%;
+    height:50vh;
+}
+.impact-mask{
+    height:50vh;
+    background:rgb(0 0 0 / 90%);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    flex-direction:column;
+}
+.impact-flex-wrapper{
+    display:flex;
+    column-gap:20px;
+    text-align:center;
+}
+.impact-flex-item{
+    margin-top:50px;
+}
+.impact-header{
+    font-size:12pt;
+}
+.impact-caption{
+    font-size:36pt;
+}
+.impact-sub-header{
+    font-size:42pt;
+    text-align:center;
+}
+.impact-sub-caption{
+    margin-top:20px;
+}
+
+.testing{
+    margin-top:0px;
+}
+
+@media screen and (max-width:769px){
+    .nav-list-item{display:none;}
+    .flex-wrapper,.flex-wrapper-2{
+        display:flex;
+        flex-direction:column;
+        row-gap:20px;
+        padding:20px;
+    }
+    .flex-wrapper-2{margin-top:-20px;}
+    .flex-item{text-align:center;}
+    .landing-section-mask{
+        text-align:center;
+        padding-left:20px;padding-right:20px;
+    }
+    .flex-wrapper-parent h1{font-size:24pt}
+    .logo{
+        height:160px;
+    }
+    #welcome-header{font-size:28pt}
+    #sub-header{font-size:18pt}
+    .impact-flex-wrapper{
+        flex-direction:column;
+        row-gap:0px;
+    }
+    .impact-caption{
+        font-size:27pt;
+    }
+    .impact-sub-caption{
+        font-size:12pt;
+        margin-top:10px;
+    }
+    .impact-bg-image,.impact-mask{
+        height:80vh;
+        text-align:center;
+    }
+    .impact-bg-image{
+        background-size:100%;
+    }
+    .impact-flex-wrapper{
+        padding-bottom:20px;
+    }
+    
+}
+@media screen and (max-width:230px){
+    #welcome-header{font-size:24pt;}
+    #sub-header{font-size:12pt}
+}
+@media screen and (max-width:190px){
+    .navigation-inner-wrapper{
+        flex-direction:column;
+    }
+    .flex-item{font-size:10pt;word-break:break-word !important}
+    #welcome-header{font-size:16pt;}
+    #sub-header{font-size:12pt}
+}
+@media screen and (max-width:250px){
+    .navigation-inner-wrapper{
+        flex-direction:column;
+        padding-bottom:120px;
+    }
+}
+@media screen and (min-width:770px){
+    .menu-wrapper{
+        display:none;
+    }
+}
